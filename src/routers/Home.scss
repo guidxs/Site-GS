@@ -1,0 +1,75 @@
+.banner {
+    max-width: 1000px;
+    height: 230px;
+    margin-top: 25px;
+    border: 1px solid #8c8888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    p {
+      text-align: center;
+    }
+  
+    a {
+      position: absolute;
+      bottom: 0;
+      right: 0; 
+      text-decoration: none;
+      border-radius: 3px;
+      border: 1px solid rgb(98, 96, 96);
+      padding: 10px;
+      margin: 10px;
+    }
+}
+
+.rightArea {
+  float: right;
+  width: 30%; /* Ajuste a largura conforme necessário */
+}
+
+.textBox {
+  border: 1px solid black; /* Ajuste a cor da borda conforme necessário */
+  margin-bottom: 10px; /* Ajuste a margem conforme necessário */
+  padding: 10px; /* Ajuste o padding conforme necessário */
+}
+
+.destaque {
+    border: 1px solid #8c8888;
+    display: flex;
+    justify-content: center;
+  
+    @media (max-width:850px) { 
+      flex-direction: column;
+    }
+  
+    article {
+      max-width: 300px;
+      border: 1px solid rgb(174, 173, 173);
+      display: flex;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 2px 2px 2px rgb(147, 145, 145);
+  
+      @media (max-width:850px) { 
+        max-width: 850px;
+      }
+  
+      div {
+        padding: 15px;
+  
+        h1 {
+          font-size: 25px;
+          margin-bottom: 10px;
+        }
+    
+        h2 {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+  
+    }
+}
