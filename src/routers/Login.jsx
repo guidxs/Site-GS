@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import './Login.scss';
 
 
 function Login() {
@@ -30,20 +31,18 @@ function Login() {
 
                 for (let i=0; i < users.length;i++){
                     const use =users[i];
-                    user = use;
-
+                
                     if(use.usuario==usuario.usuario  && use.senha == usuario.senha){
                         user =use;
                         break;
                     }
-                 
                 }
             }
             if(user){
                 sessionStorage.setItem('usuarioLogado', JSON.stringify(user));
 
                 setTimeout(()=>{
-                    window.location='/';
+                    window.location='/home';
                 },3000)
             }else{
                 alert("Usuario/senha Invalidos")
@@ -51,7 +50,7 @@ function Login() {
                         usuario:"",
                         senha:"",
                     })
-                    window.location ="/login";
+                    window.location ="/";
                 }
             }
         catch(error){
@@ -62,8 +61,8 @@ function Login() {
 
   return (
     <>
-    <h1>Login</h1>
     <form onSubmit={handleSubmit}>
+        <h1>Login</h1>
         <div>
             <label htmlFor='idUsuario'>Usuario:</label>
             <input
@@ -85,7 +84,7 @@ function Login() {
             onChange={handleChange}
             />
         </div>
-        <button type="submit">Logar</button>
+        <button type="submit" className='logar'>Login &gt;&gt;</button>
 
     </form>
   

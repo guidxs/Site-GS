@@ -1,10 +1,75 @@
-nav {
-    background-color: blue;
-    a {
-      color: white;
-      text-decoration: none;
-      &:hover {
-        color: lightblue;
-      }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #62b2d1; /* Cor de fundo da barra de navegação, substitua conforme necessário */
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      width: 240px; /* Ajuste o tamanho da sua logo conforme necessário */
+      height: auto;
+      margin-right: 10px; /* Espaçamento entre a logo e o texto/nome do site */
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
     }
   }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+
+    .user-info {
+      margin-right: 10px; /* Espaçamento entre as informações do usuário e o botão de logout */
+
+      p {
+        margin: 0;
+        font-size: 1rem;
+      }
+    }
+
+    .buttonlogout {
+      background: #435db4;
+      border: 1px solid #435db4;
+      border-radius: 6px;
+      box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 16px;
+      min-height: 40px;
+      outline: 0;
+      padding: 12px 14px;
+      text-align: center;
+      text-rendering: geometricprecision;
+      text-transform: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: middle;
+    }
+
+    .buttonlogout:hover,
+    .buttonlogout:active {
+      background-color: initial;
+      background-position: 0 0;
+      color: #435db4;
+    }
+
+    .buttonlogout:active {
+      opacity: .5;
+    }
+    }
+  }
+
