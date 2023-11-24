@@ -24,11 +24,11 @@ npm run backend
 
 Para acessar o site, utilize uma das seguintes opções de login:
 
-* **Usuário:**Admin
+* **Usuário:** Admin
 * **Senha:** 12345
 
-* **Usuário:**Funcionário
+* **Usuário:** Funcionário
 * **Senha:** 123456
 
-* **Usuário:**Cliente
+* **Usuário:** Cliente
 * **Senha:** 1234
