@@ -19,7 +19,7 @@ function Nav() {
       <div className="nav-right">
         {userLogado && (
           <div className="user-info">
-            <p>{`Usuário logado: ${userLogado.usuario}`}</p>
+            <p>{`Usuário logado: ${userLogado.usuario}, Email: ${userLogado.email}`}</p>
             <button onClick={handleLogout} className='buttonlogout'>Logout</button>
           </div>
         )}

@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+
 * {
     margin: 0px;
     padding: 0px;
   }
 
+  body {
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    background: 
+      linear-gradient(
+        rgba(173, 216, 230, 0.22), 
+        rgba(173, 216, 230, 0.22)
+      ),
+      url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+  }
+
   form {
+    background-color: #fff;
     font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;

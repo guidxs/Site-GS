@@ -3,16 +3,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #62b2d1; /* Cor de fundo da barra de navegação, substitua conforme necessário */
+  background-color: #9BBEC8;
+  
 
   .nav-left {
     display: flex;
     align-items: center;
 
     .logo {
-      width: 240px; /* Ajuste o tamanho da sua logo conforme necessário */
+      width: 240px; 
       height: auto;
-      margin-right: 10px; /* Espaçamento entre a logo e o texto/nome do site */
+      margin-right: 10px; 
     }
 
     p {
@@ -27,7 +28,7 @@
     align-items: center;
 
     .user-info {
-      margin-right: 10px; /* Espaçamento entre as informações do usuário e o botão de logout */
+      margin-right: 10px; 
 
       p {
         margin: 0;
@@ -36,8 +37,8 @@
     }
 
     .buttonlogout {
-      background: #435db4;
-      border: 1px solid #435db4;
+      background: #427D9D;
+      border: 1px solid #427D9D;
       border-radius: 6px;
       box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
       box-sizing: border-box;
@@ -64,7 +65,7 @@
     .buttonlogout:active {
       background-color: initial;
       background-position: 0 0;
-      color: #435db4;
+      color: #427D9D;
     }
 
     .buttonlogout:active {

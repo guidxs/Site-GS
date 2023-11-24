@@ -61,6 +61,7 @@ function Login() {
 
   return (
     <>
+    <div className="login">
     <form onSubmit={handleSubmit}>
         <h1>Login</h1>
         <div>
@@ -73,6 +74,7 @@ function Login() {
             onChange={handleChange}
             />
         </div>
+    
 
         <div>
             <label htmlFor='idSenha'>Senha:</label>
@@ -87,6 +89,7 @@ function Login() {
         <button type="submit" className='logar'>Login &gt;&gt;</button>
 
     </form>
+    </div>
   
     </>
   )

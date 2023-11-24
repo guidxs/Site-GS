@@ -1,12 +1,22 @@
 {
     "usuarios":[
         {
+            "id":"1",
             "usuario":"Admin",
+            "email":"admin@fiap.com.br",
             "senha":"12345"
         },
         {
+            "id":"2",
             "usuario":"Funcionario",
+            "email":"funcionario@fiap.com.br",
             "senha":"123456"
+        },
+        {
+            "id":"3",
+            "usuario":"Cliente",
+            "email":"cliente@fiap.com.br",
+            "senha":"1234"
         }
     ]
 }
